@@ -1,0 +1,108 @@
+<html>
+<head>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+ button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+  
+}
+
+
+
+.s1 {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.s2 {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.s3 {
+  padding: 16px;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+<form action="test.html" method="post" name="aqa" onsubmit="return f1()">
+  <div class="s1">
+    <img src="SSS11.jpg" alt="Avatar" class="s2">
+  </div>
+
+  <div class="s3">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username"  name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw"  required>
+        
+    <button type="submit" >Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+<script>
+    function f1(){
+var x=document.forms["aqa"]["uname"].value;
+var y=document.forms["aqa"]["psw"].value;
+var z=y.length;
+var n=x.length;
+if(n<6)
+{
+    alert("enter over 6 care");
+    return false;
+}
+if(z<6)
+{
+    alert("enter over 6 nom");
+    return false;
+}
+if(x=="bushra2007" && y=="123456")
+{
+    return true;
+}
+else
+{
+    alert("user name & pass is not correct");
+
+   return false;
+} 
+
+}
+</script>
+  
+</form>
+
+</body>
+</html>
